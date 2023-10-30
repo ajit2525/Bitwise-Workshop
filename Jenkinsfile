@@ -13,4 +13,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            emailext body: 'pipeline is success', subject: 'Pipeline-Status', to: 'ajiteee2394@gmail.com'
+        }
+    }
 }
