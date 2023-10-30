@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("C:\Users\ajitp\.jenkins\jobs\my-new-java\my-app\") {
+                dir("\Users\ajitp\.jenkins\jobs\my-new-java\my-app\") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             
